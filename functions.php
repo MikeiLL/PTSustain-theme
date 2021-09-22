@@ -8,23 +8,47 @@ Note: this function loads the parent stylesheet before, then child theme stylesh
 (leave it in place unless you know what you are doing.)
 */
 
-if ( ! function_exists( 'suffice_child_enqueue_child_styles' ) ) {
-	function ProsperitySustainablePopulation_enqueue_child_styles() {
+if ( ! function_exists( 'propserity_sustainable_population_enqueue_child_styles' ) ) {
+	function propserity_sustainable_population_enqueue_child_styles() {
 	    // loading parent style
 	    wp_register_style(
-	      'parente2-style',
+	      'greennature-style',
 	      get_template_directory_uri() . '/style.css'
 	    );
 
-	    wp_enqueue_style( 'parente2-style' );
+	    wp_enqueue_style( 'greennature-style' );
 	    // loading child style
 	    wp_register_style(
-	      'childe2-style',
+	      'prosperity-style',
 	      get_stylesheet_directory_uri() . '/style.css'
 	    );
-	    wp_enqueue_style( 'childe2-style');
+	    wp_enqueue_style( 'prosperity-style');
 	 }
 }
-add_action( 'wp_enqueue_scripts', 'ProsperitySustainablePopulation_enqueue_child_styles' );
+add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_child_styles' );
 
-/*Write here your own functions */
+function propserity_sustainable_population_enqueue_scripts(){
+	wp_register_script( 'prosperity-population-js', get_stylesheet_directory_uri() . '/js/main.js', ['jquery'], '1.0.0', true );
+	wp_enqueue_script( 'prosperity-population-js' );
+}
+add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
+
+/**
+ * Population Count Shortcode
+ */
+add_shortcode('population-count', function($atts, $content){
+	$atts = shortcode_atts(
+		array(
+				'id' => 'population-count-container'
+		), $atts);
+
+	$pop_count_vars = [
+		'population_count_copy' => __('Many billion and counting...', 'prosperity-through-sustainable-population')
+	];
+
+	wp_localize_script('prosperity-population-js', 'ptsp_script_vars', $pop_count_vars);
+
+	return sprintf('<div id="%1$s" class="population-count-count"></div>',
+									$atts['id'],
+								);
+});
