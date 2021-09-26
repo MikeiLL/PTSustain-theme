@@ -64,7 +64,7 @@ add_shortcode('population-count', function($atts, $content){
 				'id' => 'population-count-container'
 		), $atts);
 
-	return sprintf('<div id="%1$s" class="population-count-count"></div>',
+	return sprintf('<span id="%1$s" class="population-count-count"></span>',
 									$atts['id'],
 								);
 });
