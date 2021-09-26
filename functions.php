@@ -52,6 +52,8 @@ function propserity_sustainable_population_enqueue_scripts(){
 
 }
 add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
+add_action( 'admin_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
+
 
 /**
  * Population Count Shortcode
@@ -66,3 +68,10 @@ add_shortcode('population-count', function($atts, $content){
 									$atts['id'],
 								);
 });
+
+/**
+ * Override GreenNature WooCommerce Nav Button
+ */
+function greennature_get_woocommerce_nav( $icon_style = 'dark' ){
+	return null;
+}
