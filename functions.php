@@ -8,6 +8,7 @@ Note: this function loads the parent stylesheet before, then child theme stylesh
 (leave it in place unless you know what you are doing.)
 */
 
+
 if ( ! function_exists( 'propserity_sustainable_population_enqueue_child_styles' ) ) {
 	function propserity_sustainable_population_enqueue_child_styles() {
 	    // loading parent style
@@ -53,21 +54,6 @@ function propserity_sustainable_population_enqueue_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
 add_action( 'admin_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
-
-
-/**
- * Population Count Shortcode
- */
-add_shortcode('population-count', function($atts, $content){
-	$atts = shortcode_atts(
-		array(
-				'id' => 'population-count-container'
-		), $atts);
-
-	return sprintf('<span id="%1$s" class="population-count-count"></span>',
-									$atts['id'],
-								);
-});
 
 /**
  * Override GreenNature WooCommerce Nav Button
