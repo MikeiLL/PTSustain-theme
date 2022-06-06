@@ -54,6 +54,15 @@ function propserity_sustainable_population_enqueue_scripts(){
 add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
 add_action( 'admin_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
 
+/**
+ * Registers a stylesheet.
+ */
+function  ptsustain_register_plugin_styles() {
+    wp_register_style( 'ptsustain-responsive-css', get_stylesheet_directory_uri() . '/stylesheet/style-responsive.css' );
+    wp_enqueue_style( 'ptsustain-responsive-css' );
+}
+// Register style sheet.
+add_action( 'wp_enqueue_scripts', 'ptsustain_register_plugin_styles' );
 
 /**
  * Population Count Shortcode
