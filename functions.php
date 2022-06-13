@@ -58,6 +58,10 @@ add_action( 'admin_enqueue_scripts', 'propserity_sustainable_population_enqueue_
 
 add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_deregister_styles', 11 );
 function propserity_sustainable_population_deregister_styles() {
+	/* Deregister the parent theme stylesheet.
+		This is quite a hack. Seems like using the admin to make sure they are not containing
+		the wrong data would be a better solution.
+	*/
 	wp_dequeue_style( 'style-responsive-css' );
 	wp_dequeue_style( 'style-custom-css' );
 }
