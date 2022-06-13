@@ -65,6 +65,7 @@ function propserity_sustainable_population_deregister_styles() {
 	wp_dequeue_style( 'style-responsive-css' );
 	wp_dequeue_style( 'style-custom-css' );
 }
+
 /**
  * Override GreenNature WooCommerce Nav Button
  */
