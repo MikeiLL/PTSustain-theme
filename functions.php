@@ -55,6 +55,12 @@ function propserity_sustainable_population_enqueue_scripts(){
 add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
 add_action( 'admin_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
 
+
+add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_deregister_styles', 11 );
+function propserity_sustainable_population_deregister_styles() {
+	wp_dequeue_style( 'style-responsive-css' );
+	wp_dequeue_style( 'style-custom-css' );
+}
 /**
  * Override GreenNature WooCommerce Nav Button
  */
