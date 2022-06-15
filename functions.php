@@ -8,6 +8,7 @@ Note: this function loads the parent stylesheet before, then child theme stylesh
 (leave it in place unless you know what you are doing.)
 */
 
+
 if ( ! function_exists( 'propserity_sustainable_population_enqueue_child_styles' ) ) {
 	function propserity_sustainable_population_enqueue_child_styles() {
 	    // loading parent style
@@ -64,19 +65,15 @@ function  ptsustain_register_plugin_styles() {
 // Register style sheet.
 add_action( 'wp_enqueue_scripts', 'ptsustain_register_plugin_styles' );
 
-/**
- * Population Count Shortcode
- */
-add_shortcode('population-count', function($atts, $content){
-	$atts = shortcode_atts(
-		array(
-				'id' => 'population-count-container'
-		), $atts);
-
-	return sprintf('<span id="%1$s" class="population-count-count"></span>',
-									$atts['id'],
-								);
-});
+add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_deregister_styles', 11 );
+function propserity_sustainable_population_deregister_styles() {
+	/* Deregister the parent theme stylesheet.
+		This is quite a hack. Seems like using the admin to make sure they are not containing
+		the wrong data would be a better solution.
+	*/
+	wp_dequeue_style( 'style-responsive-css' );
+	wp_dequeue_style( 'style-custom-css' );
+}
 
 /**
  * Override GreenNature WooCommerce Nav Button

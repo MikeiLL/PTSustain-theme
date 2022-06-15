@@ -1,2 +1,2 @@
 #!/usr/bin
-rsync -avP *.css *.php fonts js ptsustain:public_html/wp-content/themes/ProsperitySustainablePopulation/
+rsync -avP *.css *.php js ptsustain:public_html/wp-content/themes/ProsperitySustainablePopulation/
