@@ -4,32 +4,25 @@ html body{ min-width: 300px; }
 
 /*--- tablet ---*/
 
-@media only screen and (max-width: 1150px) { /*T edit, T-add */
+@media only screen and (max-width: 1150px) {
 	.greennature-button-overlay,
-	.greennature-woo-button-overlay { display: none; } /*T edit */
+	.greennature-woo-button-overlay { display: none; }
 	body .greennature-logo { float: none; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 20px; } 
-	body .greennature-logo-inner { margin: 0px auto; } /*T edit */
-	body .greennature-navigation-wrapper{ float: none; margin-top: 10px; line-height: 0; text-align: center;  } /* T-EDIT */
-	body .greennature-navigation { display: inline-block; line-height: 1.7; text-align: left; }/* TEdit */
+	body .greennature-logo-inner { margin: 0px auto; }
+	body .greennature-navigation-wrapper{ float: none; margin-top: 0px; line-height: 0; text-align: center; }
+	body .greennature-navigation { display: inline-block; line-height: 1.7; text-align: left; }
 }
 
 @media only screen and (max-width: 1100px) {
-	/* .greennature-button-overlay,
-	.greennature-woo-button-overlay { display: none; } moved to BP 1150 */
 	.greennature-donate-button { margin-left: 25px; width: auto; }
 	.greennature-top-woocommerce-button { margin-right: 0px; margin-left: 25px; }
 	.greennature-navigation-wrapper .greennature-main-menu > li > a.sf-with-ul-pre,
 	.greennature-navigation-wrapper .greennature-main-menu > li > a.sf-with-ul
-	/* .greennature-navigation-wrapper .greennature-main-menu > li > a { padding-right: 25px; }	remove entirely */
 }
 
 @media only screen and (max-width: 1050px) {
-	/* body .greennature-logo { float: none; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 20px; } MOVED TO 1150*/
-	/* body .greennature-logo-inner { margin: 0px auto; } MOVED TO BP 1150 */
-	/* body .greennature-navigation-wrapper{ float: none; margin-top: 10px; line-height: 0; text-align: center;  } moved to BP 1150 */ 
-	/* body .greennature-navigation { display: inline-block; line-height: 1.7; text-align: left; }moved to BP 1150 */
-	body .greennature-logo-right-text{ float: none; margin-top: 10px; text-align: center; }
-	/* body .greennature-navigation-wrapper .greennature-main-menu > li > a{ padding-bottom: 25px; } remove entirely */	
+	body .greennature-navigation-wrapper { margin-top: 0px;} 
+	body .greennature-logo-right-text { float: none; margin-top: 10px; text-align: center; }
 	body .greennature-button-overlay { top: auto; height: 70px; }
 	body .greennature-fixed-header .greennature-logo{ display: none; }
 }
@@ -37,22 +30,18 @@ html body{ min-width: 300px; }
 @media only screen and (max-width: 959px) {
 	body .container{ max-width: 768px; }	
 	body .body-wrapper.greennature-boxed-style { max-width: 808px; }
-
 	.greennature-hide-in-tablet{ display: none; } 
 	.greennature-hide-in-tablet-mobile{ display: none; }
-	
 	.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next { opacity: 1; }
 	.greennature-fixed-header{ display: none; }
-	
 	.gdlr-icon-shortcode { margin-bottom: 10px; }
-	
 	.greennature-blog-widget .greennature-blog-date-wrapper { display: none; }
 	/* header */
-	.greennature-navigation-wrapper{ display: none; } /* from 767 BP */
-	#greennature-responsive-navigation { display: block; height: 0px; position: static; float: none; } /* from 767 BP */
-	body .greennature-logo { padding-right: 60px; } /* moved from 767bp */
-	body .greennature-logo-inner { margin-left: 0px; } /* from 767bp */
-	#greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px; margin-top: 0px; } /* from 767bp */
+	.greennature-navigation-wrapper{ display: none; } 
+	#greennature-responsive-navigation { display: block; height: 0px; position: static; float: none; }
+	body .greennature-logo { padding-right: 60px; } 
+	body .greennature-logo-inner { margin-left: 0px; } 
+	#greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px; margin-top: 0px; }
 } 
 
 /*--- mobile landscape style ---*/
@@ -84,15 +73,8 @@ html body{ min-width: 300px; }
 	/*--- header ---*/
 	body .top-navigation-left{ float: none; text-align: center; padding: 3px 0px;}
 	body .top-navigation-right { float: none; text-align: center; padding: 3px 0px;}
-	/* body .greennature-logo { padding-right: 60px; } moved 959bp */
-	/* body .greennature-logo-inner { margin-left: 0px; } moved 959bp */
-	
-	/* #greennature-responsive-navigation { display: block; height: 0px; position: static; float: none; } moved to 959bp */
-	/* #greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px; margin-top: 0px; } moved to 959bp */
 	.dl-menuwrapper > .dl-menu, 
 	.dl-menuwrapper > .dl-submenu{ margin: 20px 0px 0px; width: 390px; text-align: left; }
-
-	/* .greennature-navigation-wrapper{ display: none; } *//* moved to 959 BP */
 
 	/*--- page item ---*/
 	.greennature-item-title-head .greennature-nav-title{ display: none; }
