@@ -29,33 +29,6 @@ if ( ! function_exists( 'propserity_sustainable_population_enqueue_child_styles'
 add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_child_styles' );
 
 /**
- * Localize Script.
- *
- * Send required variables as javascript object.
- *
- * @return void
- */
-function propserity_sustainable_population_localize_script() {
-
-	$pop_count_vars = [
-		'population_count_copy' => __('Many billion and counting...', 'prosperity-through-sustainable-population')
-	];
-
-	wp_localize_script('prosperity-population-js', 'ptsp_script_vars', $pop_count_vars);
-}
-
-function propserity_sustainable_population_enqueue_scripts(){
-
-	wp_register_script( 'prosperity-population-js', get_stylesheet_directory_uri() . '/js/main.js', ['jquery'], '1.0.0', true );
-	wp_enqueue_script( 'prosperity-population-js' );
-
-	propserity_sustainable_population_localize_script();
-
-}
-add_action( 'wp_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
-add_action( 'admin_enqueue_scripts', 'propserity_sustainable_population_enqueue_scripts' );
-
-/**
  * Registers a stylesheet.
  */
 function  ptsustain_register_plugin_styles() {
