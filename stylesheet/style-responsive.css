@@ -1,26 +1,42 @@
 html body{ min-width: 300px; }
 
-#greennature-responsive-navigation{ display: none; }
+/* #greennature-responsive-navigation{ display: none; } */
+
+.greennature-item-start-content { width: 100%; max-width: 100% !important}
+.greennature-main-content > div:first-child { margin-right: 0}
+
+.greennature-main-content > div:not(:first-child) {
+	max-width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*--- tablet ---*/
 
 @media only screen and (min-width: 1151px) {
-	.greennature-navigation-wrapper .greennature-main-menu > li > a { padding-right: 20px !important }
+	.greennature-navigation-wrapper .greennature-main-menu > li > a { padding-right: 15px !important }
 	.population-count-count { font-size: 3rem }
-	.greennature-item-start-content { padding-top: 90px;}
+	.greennature-item-start-content { padding-top: 88px;}
 	.greennature-main-content { margin-left: 0; margin-right: 0;}
+	.greennature-main-content > div:not(:first-child) {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	body .greennature-logo-inner { margin-left: 5px; max-width: 280px;} /*T*/
 }
 
 @media only screen and (max-width: 1150px) {
 	.greennature-button-overlay,
 	.greennature-woo-button-overlay { display: none; }
-	.greennature-donate-button, .greennature-donate-button:hover{ color: #fff; } /*override PT custom */
+	.greennature-donate-button, .greennature-donate-button span { color: #fff; } /*override PT custom */
 	body .greennature-logo { float: none; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 20px; } 
 	body .greennature-logo-inner { margin: 0px auto; }
 	body .greennature-navigation-wrapper{ float: none; margin-top: 0px; line-height: 0; text-align: center; }
 	body .greennature-navigation { display: inline-block; line-height: 1.7; text-align: left; }
 	.greennature-item-start-content { padding-top: 163px }
-	
+	.greennature-main-content { margin-left: 0; margin-right: 0;}
+	.greennature-main-content > div:not(:first-child) { width: 85%; }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -49,12 +65,14 @@ html body{ min-width: 300px; }
 	.greennature-blog-widget .greennature-blog-date-wrapper { display: none; }
 	/* header */
 	.greennature-navigation-wrapper{ display: none; } 
-	#greennature-responsive-navigation { display: block; height: 0px; position: static; float: none; }
+	#greennature-responsive-navigation { display: block !important; height: 0px; position: static; float: none; }
 	body .greennature-logo { padding-right: 60px; } 
-	body .greennature-logo-inner { margin-left: 0px; } 
+	body .greennature-logo-inner { margin-left: 0px !important; max-width: 280px;} /*T*/
 	#greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px; margin-top: 0px; }
+
 	.container.greennature-item-start-content { width: 100%; max-width: 100%;}
 	.greennature-item-start-content { padding-top: 106px }
+	.greennature-main-content > div:not(:first-child) { width: 90%; }
 } 
 
 /*--- mobile landscape style ---*/
@@ -89,7 +107,9 @@ html body{ min-width: 300px; }
 	.dl-menuwrapper > .dl-menu, 
 	.dl-menuwrapper > .dl-submenu{ margin: 20px 0px 0px; width: 390px; text-align: left; }
 
+
 	/*--- page item ---*/
+	.greennature-main-content > div:not(:first-child) { width: 100%;} /*T*/
 	.greennature-main-content, .greennature-main-content .alignnone:first-child {margin-left: 0; margin-right: 0; }
 	.greennature-item-start-content { padding-top: 0px }
 	.greennature-item-title-head .greennature-nav-title{ display: none; }
