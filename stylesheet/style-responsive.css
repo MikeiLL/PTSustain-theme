@@ -5,7 +5,10 @@ html body{ min-width: 300px; }
 /*--- tablet ---*/
 
 @media only screen and (min-width: 1151px) {
+	.greennature-navigation-wrapper .greennature-main-menu > li > a { padding-right: 20px !important }
 	.population-count-count { font-size: 3rem }
+	.greennature-item-start-content { padding-top: 90px;}
+	.greennature-main-content { margin-left: 0; margin-right: 0;}
 }
 
 @media only screen and (max-width: 1150px) {
@@ -16,7 +19,7 @@ html body{ min-width: 300px; }
 	body .greennature-logo-inner { margin: 0px auto; }
 	body .greennature-navigation-wrapper{ float: none; margin-top: 0px; line-height: 0; text-align: center; }
 	body .greennature-navigation { display: inline-block; line-height: 1.7; text-align: left; }
-	.greennature-navigation-wrapper .greennature-main-menu > li > a { padding-right: 20px !important }
+	.greennature-item-start-content { padding-top: 163px }
 	
 }
 
@@ -50,6 +53,8 @@ html body{ min-width: 300px; }
 	body .greennature-logo { padding-right: 60px; } 
 	body .greennature-logo-inner { margin-left: 0px; } 
 	#greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px; margin-top: 0px; }
+	.container.greennature-item-start-content { width: 100%; max-width: 100%;}
+	.greennature-item-start-content { padding-top: 106px }
 } 
 
 /*--- mobile landscape style ---*/
@@ -85,6 +90,8 @@ html body{ min-width: 300px; }
 	.dl-menuwrapper > .dl-submenu{ margin: 20px 0px 0px; width: 390px; text-align: left; }
 
 	/*--- page item ---*/
+	.greennature-main-content, .greennature-main-content .alignnone:first-child {margin-left: 0; margin-right: 0; }
+	.greennature-item-start-content { padding-top: 0px }
 	.greennature-item-title-head .greennature-nav-title{ display: none; }
 	
 	.greennature-item-title-wrapper.greennature-left .greennature-item-title, 
@@ -120,6 +127,8 @@ html body{ min-width: 300px; }
 	
 	.wpcf7 .wpcf7-contact-half-right span.wpcf7-form-control-wrap { padding-left: 0px; padding-right: 44px; }
 	
+	.wp-block-kadence-rowlayout:not(:first-child) { max-width: 420px; margin: 0 auto; }
+
 	/*--- single page ---*/
 	.greennature-portfolio-style1 .greennature-portfolio-description{ float: none; margin-right: 0px; width: auto; }
 	.greennature-portfolio-style1 .greennature-portfolio-info{ width: auto; float: none; margin-bottom: 30px; }	
@@ -149,6 +158,9 @@ html body{ min-width: 300px; }
 	.greennature-payment-price-preset{ margin-bottom: 15px; }	
 }	
 
+@media only screen and (max-width: 525px) {
+	/*span*/.closing { display: block; clear: left;}
+}
 
 /*--- mobile portrait style ---*/
 @media only screen and (max-width: 419px) {
