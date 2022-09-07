@@ -2,7 +2,8 @@ html body{ min-width: 300px; }
 
 /* #greennature-responsive-navigation{ display: none; } */
 
-.greennature-item-start-content { width: 100%; max-width: 100% !important}
+header, .content-wrapper, .greennature-header-container { max-width: 1200px !important; margin: 0 auto; }
+.greennature-item-start-content { width: 100%; } /* max-width: 100% !important */
 .greennature-main-content > div:first-child { margin-right: 0}
 
 .greennature-main-content > div:not(:first-child) {
@@ -14,6 +15,7 @@ html body{ min-width: 300px; }
 /*--- tablet ---*/
 
 @media only screen and (min-width: 1151px) {
+	.greennature-item-start-content { width: 100%; max-width: 100% !important }
 	.greennature-navigation-wrapper .greennature-main-menu > li > a { padding-right: 15px !important }
 	.population-count-count { font-size: 3rem }
 	.greennature-item-start-content { padding-top: 88px;}
