@@ -1,0 +1,68 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#36C5F0",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#2EB67D",
+					"name": "Secondary"
+				},
+				{
+					"slug": "background",
+					"color": "#fff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#000",
+					"name": "Foreground"
+				}
+			]
+		},
+    "typography": {
+			"fontSizes": [
+				{
+					"name": "Tiny",
+					"size": "0.64rem",
+					"slug": "tiny"
+				},
+				{
+					"name": "Small",
+					"size": "0.8rem",
+					"slug": "small"
+				},
+				{
+					"name": "Normal",
+					"size": "1rem",
+					"slug": "normal"
+				},
+				{
+					"name": "Large",
+					"size": "1.25rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "1.563rem",
+					"slug": "extra-large"
+				},
+				{
+					"name": "Huge",
+					"size": "1.953rem",
+					"slug": "huge"
+				},
+				{
+					"name": "Gigantic",
+					"size": "2.441rem",
+					"slug": "gigantic"
+				}
+			]
+    }
+	}
+}
