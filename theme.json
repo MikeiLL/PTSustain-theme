@@ -9,6 +9,32 @@
 					"name": "Primary"
 				},
 				{
+					"slug": "yellow",
+					"color": "#fsc93f",
+					"name": "Primary"
+				},
+				{
+					"slug": "green",
+					"color": "#3a7a69",
+					"name": "Primary"
+				},
+				{
+					"slug": "greenText",
+					"color": "#68bf7a",
+					"name": "Primary"
+				},
+				{
+					"slug": "brown",
+					"color": "#3f3222",
+					"name": "Primary"
+				},
+				{
+					"slug": "darkBrown",
+					"color": "#2c2419",
+					"name": "Primary"
+				},
+				
+				{
 					"slug": "secondary",
 					"color": "#2EB67D",
 					"name": "Secondary"
@@ -20,7 +46,7 @@
 				},
 				{
 					"slug": "foreground",
-					"color": "#000",
+					"color": "#222",
 					"name": "Foreground"
 				}
 			]
