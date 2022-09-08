@@ -31,10 +31,11 @@ header, .content-wrapper, .greennature-header-container { max-width: 1200px !imp
 @media only screen and (max-width: 1150px) {
 	.greennature-button-overlay,
 	.greennature-woo-button-overlay { display: none; }
+	.greennature-logo-inner { max-width: 240px !important; }
 	.greennature-donate-button, .greennature-donate-button span { color: #fff; } /*override PT custom */
-	body .greennature-logo { float: none; margin-top: 0px; margin-bottom: 0px; padding-top: 20px; padding-bottom: 20px; } 
+	body .greennature-logo { float: none; padding-top: 20px; padding-bottom: 20px; margin:0 !important} 
 	body .greennature-logo-inner { margin: 0px auto; }
-	body .greennature-navigation-wrapper{ float: none; margin-top: 0px; line-height: 0; text-align: center; }
+	body .greennature-navigation-wrapper{ float: none; margin-top: 0px !important; line-height: 0; text-align: center; }
 	body .greennature-navigation { display: inline-block; line-height: 1.7; text-align: left; }
 	.greennature-item-start-content { padding-top: 163px }
 	.greennature-main-content { margin-left: 0; margin-right: 0;}
@@ -42,15 +43,15 @@ header, .content-wrapper, .greennature-header-container { max-width: 1200px !imp
 }
 
 @media only screen and (max-width: 1100px) {
-	.greennature-donate-button { margin-left: 25px; width: auto; }
+	.greennature-donate-button { margin-left: 35px !important; width: auto; }
 	.greennature-top-woocommerce-button { margin-right: 0px; margin-left: 25px; }
-
+	
 	.greennature-navigation-wrapper .greennature-main-menu > li > a.sf-with-ul-pre,
 	.greennature-navigation-wrapper .greennature-main-menu > li > a.sf-with-ul
 }
 
 @media only screen and (max-width: 1050px) {
-	body .greennature-navigation-wrapper { margin-top: 0px;} 
+	/* body .greennature-navigation-wrapper { margin-top: 0px;} */
 	body .greennature-logo-right-text { float: none; margin-top: 10px; text-align: center; }
 	body .greennature-button-overlay { top: auto; height: 70px; }
 	body .greennature-fixed-header .greennature-logo{ display: none; }
@@ -69,8 +70,8 @@ header, .content-wrapper, .greennature-header-container { max-width: 1200px !imp
 	.greennature-navigation-wrapper{ display: none; } 
 	#greennature-responsive-navigation { display: block !important; height: 0px; position: static; float: none; }
 	body .greennature-logo { padding-right: 60px; } 
-	body .greennature-logo-inner { margin-left: 0px !important; max-width: 280px;} /*T*/
-	#greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px; margin-top: 0px; }
+	body .greennature-logo-inner { margin-left: 15px !important; max-width: 280px;} /*T*/
+	#greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px !important; margin-top: 0px; }
 
 	.container.greennature-item-start-content { width: 100%; max-width: 100%;}
 	.greennature-item-start-content { padding-top: 106px }
@@ -106,6 +107,8 @@ header, .content-wrapper, .greennature-header-container { max-width: 1200px !imp
 	/*--- header ---*/
 	body .top-navigation-left{ float: none; text-align: center; padding: 3px 0px;}
 	body .top-navigation-right { float: none; text-align: center; padding: 3px 0px;}
+	/* #greennature-responsive-navigation .dl-trigger{ position: absolute; right: 15px; top: 35px !important; margin-top: 0px; } */
+	body .greennature-logo-inner { margin-left: 5px !important;} /*T*/
 	.dl-menuwrapper > .dl-menu, 
 	.dl-menuwrapper > .dl-submenu{ margin: 20px 0px 0px; width: 390px; text-align: left; }
 
